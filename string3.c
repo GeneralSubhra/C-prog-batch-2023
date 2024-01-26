@@ -7,11 +7,12 @@ int main()
    gets(s);
    for(int i=0;s[i]!='\0';i++)
    {
-    if(s=='a' ||s=='e' ||s=='i' ||s=='o' ||s=='u')
+    if(s[i]=='a' ||s[i]=='e' ||s[i]=='i' ||s[i]=='o' ||s[i]=='u')
     {
         c++;
     }
    }     
    printf("Total vowel count is:%d",c);
 }
+
 
