@@ -1,16 +1,18 @@
+//wap that will count the number in a sentence
 #include<stdio.h>
 int main()
 {
-    char a;
-    printf("Enter the letter: ");
-    scanf("%c",&a);
-    if(a=='a' ||a=='e' ||a=='i' ||a=='o' ||a=='u')
+    char s[200];
+    int i,c=0;
+    printf("enter the sentence: ");
+    gets(s);
+    for(i=0;s[i]!='\0';i++)
     {
-        printf("%c is vowel",a);
+        if(s[i]==' ')
+        {
+          c++;
+        }
     }
-    else{
-        printf("%c is not a vowel",a);
-    }
+    printf("number of words: %d",c+1);
     return 0;
 }
-
